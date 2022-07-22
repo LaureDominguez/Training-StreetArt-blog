@@ -1,0 +1,82 @@
+/*variables*/
+
+:root {
+	--gris-clair : #ededed;
+	--bleu-fonce : #1d1e3d;
+	--turquoise : #037d9d;
+	--orange : #fb8038;
+	--rose : #db0059;
+	--rose-transparent : #db005933;
+}
+
+/*header*/
+
+.titre {
+	background-image: url(../images/banner1.jpg);
+}
+
+/*actu*/
+
+#actu h2::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f073";
+    color: var(--turquoise);
+    font-size: 4rem;
+    line-height: 8rem;
+}
+
+#actu h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#actu h3 {
+	color: var(--turquoise);
+}
+
+/*interview*/
+
+#interview h2::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f130";
+    color: var(--rose);
+    font-size: 4rem;
+    line-height: 8rem;
+}
+
+#interview h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#interview h3 {
+	color: var(--rose);
+}
+
+/*tablette*/
+@media screen and (min-width: 780px) {
+    
+    #news input {
+    	width: 100%;
+    }
+}
+  
+   
+/*Desktop*/
+@media screen and (min-width: 980px) {
+    
+    h2 {
+    	width: 100%;
+    }
+    
+    section {
+	    padding: 2em 0;
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	}
+	
+	article {
+		width: 45%;
+	}
+}
